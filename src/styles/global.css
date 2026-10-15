@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-nalu-brown: #3D2314;
+  --color-nalu-cream: #F8F3ED;
+  --color-nalu-beige: #EDE3D6;
+  --color-nalu-blue: #4AA0E3;
+  --color-nalu-darkblue: #2E85CC;
+  --color-nalu-lightbrown: #8B6F47;
+  
+  --font-sans: "Plus Jakarta Sans", Inter, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-nalu-cream);
+  color: var(--color-nalu-brown);
+}
+
+/* Animaciones personalizadas para dar dinamismo */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-10px) scale(1.03); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
