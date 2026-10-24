@@ -21,6 +21,7 @@ import Layout from '../layouts/Layout.astro';
                 <a href="#servicios" class="hover:text-nalu-blue transition-colors duration-200">Servicios</a>
                 <a href="#ecosistema" class="hover:text-nalu-blue transition-colors duration-200">Apps & Demos</a>
                 <a href="#planes" class="hover:text-nalu-blue transition-colors duration-200">Planes</a>
+                <a href="#soporte" class="hover:text-nalu-blue transition-colors duration-200">Apoyar Proyecto</a>
                 <a href="#contacto" class="px-6 py-2.5 bg-nalu-blue hover:bg-nalu-darkblue text-white font-bold rounded-xl transition-all duration-300 shadow-lg shadow-nalu-blue/25 hover:shadow-xl hover:shadow-nalu-blue/40 hover:-translate-y-0.5">
                     Contacto
                 </a>
@@ -108,7 +109,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </section>
 
-        <!-- SECCIÓN DE ECOSISTEMA (APPS, DEMOS Y SOFTWARE GRATUITO) -->
+        <!-- SECCIÓN DE ECOSISTEMA (APPS, DEMOS Y SOFTWARE) -->
         <section id="ecosistema" class="py-24 px-6 border-t border-nalu-beige">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
@@ -132,38 +133,40 @@ import Layout from '../layouts/Layout.astro';
                         </div>
                     </div>
 
-                    <!-- 2. Demos Interactivas: SaaS Multi-modo -->
+                    <!-- 2. Demos Interactivas: SaaS Multi-modo (superPOS) -->
                     <div class="p-8 rounded-2xl bg-white/95 backdrop-blur-md border border-nalu-beige/80 hover:border-amber-600 shadow-lg shadow-nalu-brown/5 hover:shadow-2xl hover:shadow-amber-500/15 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2">
                         <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
                         <div>
                             <span class="px-3.5 py-1 text-xs font-bold bg-amber-500/10 text-amber-800 border border-amber-500/20 rounded-full inline-block mb-4 shadow-xs">SaaS Multi-modo (Demo)</span>
-                            <h3 class="text-2xl font-bold text-nalu-brown mb-3">POS Heladería & Maxiquiosco</h3>
-                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">Plataforma SaaS con arquitectura flexible. Explora en vivo cómo muta su interfaz y lógica operativa entre el modo específico para heladerías y maxiquioscos.</p>
+                            <h3 class="text-2xl font-bold text-nalu-brown mb-3">superPOS / Demo Avanzada</h3>
+                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">Plataforma SaaS con arquitectura flexible. Explora en vivo cómo muta su interfaz y lógica operativa entre heladerías y maxiquioscos.</p>
                         </div>
                         <div>
-                            <a href="https://eg139.github.io/POS-nalusoft/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-amber-800 hover:text-amber-900 transition-colors group-hover:translate-x-1.5 duration-200">
-                                Probar demo interactiva &rarr;
+                            <a href="/superpos" class="inline-flex items-center gap-2 text-sm font-bold text-amber-800 hover:text-amber-900 transition-colors group-hover:translate-x-1.5 duration-200">
+                                Ver detalles y demo &rarr;
                             </a>
                         </div>
                     </div>
 
-                    <!-- 3. Software Gratuito / En Uso: Cucurucho -->
+                    <!-- 3. Software Libre / Cucurucho -->
                     <div class="p-8 rounded-2xl bg-white/95 backdrop-blur-md border border-nalu-beige/80 hover:border-emerald-600 shadow-lg shadow-nalu-brown/5 hover:shadow-2xl hover:shadow-emerald-500/15 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2">
                         <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
                         <div>
-                            <span class="px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-800 border border-emerald-500/20 rounded-full inline-block mb-4 shadow-xs">En uso actual (Heladerías)</span>
+                            <span class="px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-800 border border-emerald-500/20 rounded-full inline-block mb-4 shadow-xs">Software Libre (MIT)</span>
                             <h3 class="text-2xl font-bold text-nalu-brown mb-3">Cucurucho POS</h3>
-                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">Aplicación gratuita orientada a heladerías, activa y en uso. Diseñada para reemplazar la carga manual en papel por ventas rápidas en móviles/tablets con exportación a CSV.</p>
+                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">POS minimalista offline-first en uso activo para mostrador rápido, control de turnos y exportación a Excel sin comisiones.</p>
                         </div>
                         <div>
-                            <a href="https://cucurucho-git-v3-eg139s-projects.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-800 hover:text-emerald-900 transition-colors group-hover:translate-x-1.5 duration-200">
-                                Probar Cucurucho online &rarr;
+                            <!-- AQUÍ COLOCAS EL DOMINIO DEFINITIVO DE TU APP -->
+                            <a href="/cucurucho" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-800 hover:text-emerald-900 transition-colors group-hover:translate-x-1.5 duration-200">
+                                Ir al sistema &rarr;
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <!-- SECCIÓN DE PLANES Y OPCIONES DE CONTRATACIÓN -->
         <section id="planes" class="py-24 px-6 border-t border-nalu-beige bg-gradient-to-b from-nalu-cream to-nalu-beige/30">
@@ -180,7 +183,7 @@ import Layout from '../layouts/Layout.astro';
                             <span class="px-3.5 py-1 text-xs font-bold bg-nalu-blue/10 text-nalu-blue border border-nalu-blue/20 rounded-full inline-block mb-4">Suscripción Mensual (SaaS)</span>
                             <h3 class="text-2xl font-bold text-nalu-brown mb-2">Plan Comercial POS</h3>
                             <div class="text-3xl font-black text-nalu-blue mb-4">$30.000 – $70.000 <span class="text-xs font-semibold text-nalu-lightbrown">ARS / mes</span></div>
-                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">Ideal para comercios locales. Acceso inmediato a la plataforma con modos específicos para heladerías y maxicoscos, con soporte y actualizaciones continuas.</p>
+                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">Ideal para comercios locales. Acceso inmediato a la plataforma con modos específicos para heladerías y maxiquioscos, con soporte y actualizaciones continuas.</p>
                             
                             <ul class="space-y-3 mb-8 text-sm text-nalu-brown/90 font-medium">
                                 <li class="flex items-center gap-2">
@@ -238,7 +241,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </section>
 
-<!-- SECCIÓN DE CONTACTO -->
+        <!-- SECCIÓN DE CONTACTO -->
         <section id="contacto" class="py-24 px-6 border-t border-nalu-beige bg-nalu-beige/30">
             <div class="max-w-3xl mx-auto text-center">
                 <h2 class="text-3xl md:text-4xl font-black text-nalu-brown mb-4">Hagamos realidad tu próximo desarrollo</h2>
@@ -255,4 +258,23 @@ import Layout from '../layouts/Layout.astro';
     <footer class="py-8 px-6 border-t border-nalu-beige bg-nalu-cream text-center text-xs text-nalu-lightbrown font-medium">
         <p>&copy; 2026 NaluSoft. Identidad y desarrollo con respaldo técnico.</p>
     </footer>
+
+    <!-- SCRIPT PARA COPIAR ALIAS CON SWEETALERT2 -->
+    <script is:inline>
+        function copiarAlias(alias) {
+            navigator.clipboard.writeText(alias).then(() => {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Alias copiado!',
+                    text: 'Copiado al portapapeles: ' + alias + '. ¡Muchas gracias por apoyar a NaluSoft!',
+                    timer: 3000,
+                    showConfirmButton: false,
+                    background: '#F4EFEA',
+                    color: '#2D231E'
+                });
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+            });
+        }
+    </script>
 </Layout>
