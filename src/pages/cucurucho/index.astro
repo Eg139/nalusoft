@@ -2,85 +2,60 @@
 import Layout from '../../layouts/Layout.astro';
 const appScreenshot = "/cucurucho.png";
 ---
-<Layout title="Cucurucho - Punto de venta simple">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-  <main class="bg-[#FFF9F0] text-[#3B1F0B] font-sans min-h-screen flex flex-col">
-    <header class="max-w-7xl mx-auto w-full flex justify-between items-center px-4 md:px-6 lg:px-8 h-[56px] md:h-[72px] shrink-0">
-    <div class="flex items-center gap-2 md:gap-3">
-        <a href="https://www.nalusoft.com.ar/" title="Volver a NaluSoft" class="w-8 h-8 md:w-auto grid place-items-center md:flex md:items-center md:gap-1.5 rounded-full md:rounded-none bg-[#3B1F0B]/5 md:bg-transparent text-[#3B1F0B] opacity-70 hover:opacity-100 transition-opacity">
-        <span class="material-symbols-rounded text-[18px]">arrow_back</span>
-        <span class="hidden md:inline text-[12px] font-medium">Volver a NaluSoft</span>
-        </a>
-        <div class="w-px h-4 bg-[#3B1F0B]/10 hidden md:block"></div>
-        <div class="flex items-center gap-2">
-        <div class="w-8 h-8 md:w-9 md:h-9 bg-[#E8D5C4] rounded-full grid place-items-center"><span class="material-symbols-rounded text-[18px] md:text-[20px]">icecream</span></div>
-        <h1 class="font-bold text-[15px] md:text-xl">Cucurucho</h1>
-        <span class="hidden md:inline-flex text-[9px] px-2 py-0.5 rounded-full bg-[#3B1F0B] text-white">Gratis</span>
+<Layout title="Cucurucho POS - Punto de venta simple | NaluSoft">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-nalu-cream/85 backdrop-blur-md border-b border-nalu-beige transition-all shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-nalu-blue/50 group-hover:border-nalu-blue transition-all shadow-md">
+          <img src="/logo.png" alt="NaluSoft" class="w-full h-full object-cover" />
         </div>
+        <span class="text-xl font-extrabold tracking-wider text-nalu-brown">NALU<span class="text-nalu-blue">SOFT</span></span>
+        <span class="hidden md:flex items-center gap-2 ml-4 pl-4 border-l border-nalu-beige">
+          <span class="px-3 py-1 text-[10px] font-bold bg-emerald-500/10 text-emerald-800 border border-emerald-500/20 rounded-full">MIT</span>
+          <span class="text-[13px] font-bold">Cucurucho</span>
+        </span>
+      </a>
+      <a href="https://cucurucho-olive.vercel.app/" class="px-6 py-2.5 bg-nalu-blue hover:bg-nalu-darkblue text-white font-bold rounded-xl shadow-lg shadow-nalu-blue/25 text-sm transition-all hover:-translate-y-0.5">
+        Empezar gratis
+      </a>
     </div>
-    <a href="https://cucurucho-olive.vercel.app/" class="bg-[#3B1F0B] text-white px-4 md:px-6 py-2.5 rounded-full font-bold text-[12px] lg:text-sm">
-        <span class="md:hidden">Empezar</span>
-        <span class="hidden md:inline">Empezar gratis</span>
-    </a>
-    </header>
+  </header>
 
-    <section class="max-w-7xl mx-auto w-full flex-1 grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-6 lg:gap-10 px-4 md:px-6 lg:px-8 py-6 lg:py-8 items-center">
-      
-      <div class="flex flex-col gap-5 lg:gap-6">
-        <div class="inline-flex self-start bg-[#E8D5C4] rounded-full px-3 lg:px-4 py-1 lg:py-1.5 text-[10px] lg:text-[11px] font-bold tracking-widest">
+  <main class="pt-36 pb-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[1.15fr_0.85fr] gap-10 items-center">
+      <div class="flex flex-col gap-6 animate-fade-in">
+        <span class="inline-flex self-start px-4 py-1.5 text-[11px] font-bold tracking-widest bg-white border border-nalu-beige rounded-full text-nalu-brown shadow-sm">
           VENTA SIMPLE • IDEAL HASTA 10 PRODUCTOS
-        </div>
+        </span>
 
-        <h2 class="text-[32px] md:text-[34px] lg:text-[46px] xl:text-[54px] font-black leading-[0.9] tracking-[-0.02em]">
+        <h1 class="text-[36px] md:text-[54px] font-black leading-[0.9] tracking-tight">
           <span class="block">De heladerías a tu negocio:</span>
-          <span class="relative inline-block mt-2 px-1">
+          <span class="relative inline-block mt-3 px-1">
             <span class="absolute left-[-3%] right-[-3%] top-[52%] -translate-y-1/2 -rotate-[1.2deg] pointer-events-none">
-              <svg viewBox="0 0 320 18" preserveAspectRatio="none" class="w-full h-[0.55em] md:h-[0.65em] block overflow-visible">
-                <defs>
-                  <filter id="brushRough1">
-                    <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" result="noise"/>
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="1.5" xChannelSelector="R" yChannelSelector="G"/>
-                  </filter>
-                </defs>
-                <path d="M1.5 10.2 C 8 3.8, 22 2.5, 48 4.2 C 78 6.2, 118 8.1, 158 6.8 C 210 5.2, 265 3.9, 310 5.8 L 318.5 7.2 C 316 11.8, 311 14.2, 301 14 C 260 15.2, 210 16.2, 160 15.4 C 95 14.2, 35 13.8, 3 14.5 Z" fill="#C9A992" filter="url(#brushRough1)"/>
+              <svg viewBox="0 0 320 18" preserveAspectRatio="none" class="w-full h-[0.65em] block overflow-visible">
+                <defs><filter id="b1"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="1.5"/></filter></defs>
+                <path d="M1.5 10.2 C 8 3.8, 22 2.5, 48 4.2 C 78 6.2, 118 8.1, 158 6.8 C 210 5.2, 265 3.9, 310 5.8 L 318.5 7.2 C 316 11.8, 311 14.2, 301 14 C 260 15.2, 210 16.2, 160 15.4 C 95 14.2, 35 13.8, 3 14.5 Z" fill="#C9A992" filter="url(#b1)"/>
               </svg>
             </span>
             <span class="relative">el punto de venta simple</span>
           </span>
-          <span class="block mt-2 text-[20px] md:text-[20px] lg:text-[28px] xl:text-[30px] font-medium opacity-50 leading-none">pensado para negocios de</span>
-          <span class="block text-[52px] md:text-[48px] lg:text-[68px] xl:text-[80px] leading-[0.85] mt-2 drop-shadow-[0_6px_18px_rgba(59,31,11,0.2)]">10 productos</span>
-        </h2>
+          <span class="block mt-3 text-[22px] md:text-[28px] font-medium opacity-60 leading-none">pensado para negocios de</span>
+          <span class="block text-[56px] md:text-[80px] leading-[0.85] mt-2 drop-shadow-[0_6px_18px_rgba(61,35,20,0.15)]">10 productos</span>
+        </h1>
 
-        <p class="text-[13px] lg:text-[14px] leading-[1.5] opacity-60 max-w-[480px]">
+        <p class="text-[15px] leading-relaxed text-nalu-lightbrown max-w-[480px] font-medium">
           No es un sistema gigante para supermercados. Es para kioscos, chocolaterías y cafés que quieren vender rápido, sin funciones que nunca van a usar.
         </p>
 
-        <div class="flex gap-4 lg:gap-6">
-          <div class="text-center"><div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-[#C9A992]/70 grid place-items-center"><span class="material-symbols-rounded text-[18px] lg:text-[22px]">icecream</span></div><p class="mt-1 text-[10px] lg:text-[11px] font-bold">Heladerías</p></div>
-          <div class="text-center"><div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-[#DCCFC2] grid place-items-center"><span class="material-symbols-rounded text-[18px] lg:text-[22px]">storefront</span></div><p class="mt-1 text-[10px] lg:text-[11px] font-bold">Kioscos</p></div>
-          <div class="text-center"><div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-[#C9A992]/70 grid place-items-center"><span class="material-symbols-rounded text-[18px] lg:text-[22px]">cookie</span></div><p class="mt-1 text-[10px] lg:text-[11px] font-bold">Chocolaterías</p></div>
-          <div class="text-center"><div class="w-10 h-10 lg:w-12 lg:h-12 rounded-full bg-[#DCCFC2] grid place-items-center"><span class="material-symbols-rounded text-[18px] lg:text-[22px]">local_cafe</span></div><p class="mt-1 text-[10px] lg:text-[11px] font-bold">Cafés</p></div>
+        <div class="flex gap-3">
+          <a href="https://cucurucho-olive.vercel.app/" class="px-8 py-4 bg-nalu-brown hover:bg-black text-white font-bold rounded-xl shadow-xl text-[15px] transition-all hover:-translate-y-1">Empezar gratis →</a>
         </div>
-
-        <div class="bg-[#E8D5C4]/50 border border-[#3B1F0B]/10 rounded-xl p-3 flex gap-3 max-w-[440px]">
-          <div class="w-6 h-6 rounded-full bg-[#3B1F0B] text-white grid place-items-center shrink-0"><span class="material-symbols-rounded text-[14px]">check</span></div>
-          <div><h3 class="font-bold text-[13px]">Simplicidad intencional</h3><p class="text-[11px] opacity-60">Hasta 10 productos para mantener todo simple. Gratis para siempre, sin trucos.</p></div>
-        </div>
-
-        <div class="flex md:hidden justify-center my-1">
-          <img src={appScreenshot} alt="Cucurucho App" class="w-full max-w-[260px] h-auto object-contain rounded-[18px] shadow-[0_16px_40px_rgba(59,31,11,0.18)]" />
-        </div>
-
-        <div class="hidden md:flex flex-col gap-2">
-          <a href="https://cucurucho-olive.vercel.app/" class="self-start bg-[#3B1F0B] text-white px-8 py-4 rounded-xl font-bold text-[15px] shadow-[0_12px_32px_rgba(59,31,11,0.25)]">Empezar gratis →</a>
-          <p class="text-[10px] opacity-40">Sin tarjeta de crédito • Setup en 2 minutos • Soporte en español</p>
-        </div>
+        <p class="text-[11px] opacity-50">Sin tarjeta • Setup en 2 min • Soporte en español</p>
       </div>
 
-      <div class="hidden md:flex justify-center">
-        <img src={appScreenshot} alt="Cucurucho App" class="w-full max-w-[280px] lg:max-w-[300px] xl:max-w-[360px] 2xl:max-w-[380px] h-auto object-contain rounded-[20px] shadow-[0_20px_60px_rgba(59,31,11,0.20)]" />
+      <div class="flex justify-center animate-float">
+        <img src={appScreenshot} alt="Cucurucho App" class="w-full max-w-[360px] h-auto rounded-[20px] shadow-[0_24px_60px_rgba(61,35,20,0.18)] border border-white" />
       </div>
-    </section>
+    </div>
   </main>
 </Layout>

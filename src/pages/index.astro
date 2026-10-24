@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
     <header class="fixed top-0 left-0 right-0 z-50 bg-nalu-cream/85 backdrop-blur-md border-b border-nalu-beige/90 transition-all shadow-sm">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <!-- Logo y marca -->
-            <a href="#" class="flex items-center gap-3 group">
+            <a href="/" class="flex items-center gap-3 group">
                 <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-nalu-blue/50 group-hover:border-nalu-blue group-hover:scale-105 transition-all shadow-md shadow-nalu-blue/10">
                     <img src="/logo.png" alt="NaluSoft Logo - Gata Siamesa" class="w-full h-full object-cover">
                 </div>
@@ -133,36 +133,35 @@ import Layout from '../layouts/Layout.astro';
                         </div>
                     </div>
 
-                    <!-- 2. Demos Interactivas: SaaS Multi-modo (superPOS) -->
-                    <div class="p-8 rounded-2xl bg-white/95 backdrop-blur-md border border-nalu-beige/80 hover:border-amber-600 shadow-lg shadow-nalu-brown/5 hover:shadow-2xl hover:shadow-amber-500/15 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
-                        <div>
-                            <span class="px-3.5 py-1 text-xs font-bold bg-amber-500/10 text-amber-800 border border-amber-500/20 rounded-full inline-block mb-4 shadow-xs">SaaS Multi-modo (Demo)</span>
-                            <h3 class="text-2xl font-bold text-nalu-brown mb-3">superPOS / Demo Avanzada</h3>
-                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">Plataforma SaaS con arquitectura flexible. Explora en vivo cómo muta su interfaz y lógica operativa entre heladerías y maxiquioscos.</p>
-                        </div>
-                        <div>
-                            <a href="/superpos" class="inline-flex items-center gap-2 text-sm font-bold text-amber-800 hover:text-amber-900 transition-colors group-hover:translate-x-1.5 duration-200">
-                                Ver detalles y demo &rarr;
-                            </a>
-                        </div>
-                    </div>
+<!-- 2. Demos Interactivas: SaaS Multi-modo (superPOS) - LANDING INTERNA -->
+<div class="p-8 rounded-2xl bg-white/95 backdrop-blur-md border border-nalu-beige/80 hover:border-amber-600 shadow-lg shadow-nalu-brown/5 hover:shadow-2xl hover:shadow-amber-500/15 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2">
+    <div class="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+    <div>
+        <span class="px-3.5 py-1 text-xs font-bold bg-amber-500/10 text-amber-800 border border-amber-500/20 rounded-full inline-block mb-4 shadow-xs">SaaS Multi-modo (Demo)</span>
+        <h3 class="text-2xl font-bold text-nalu-brown mb-3">superPOS / Demo Avanzada</h3>
+        <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">Plataforma SaaS con arquitectura flexible. Explora en vivo cómo muta su interfaz y lógica operativa entre heladerías y maxiquioscos.</p>
+    </div>
+    <div>
+        <a href="/superpos" class="inline-flex items-center gap-2 text-sm font-bold text-amber-800 hover:text-amber-900 transition-colors group-hover:translate-x-1.5 duration-200">
+            Ver detalles y demo &rarr;
+        </a>
+    </div>
+</div>
 
-                    <!-- 3. Software Libre / Cucurucho -->
-                    <div class="p-8 rounded-2xl bg-white/95 backdrop-blur-md border border-nalu-beige/80 hover:border-emerald-600 shadow-lg shadow-nalu-brown/5 hover:shadow-2xl hover:shadow-emerald-500/15 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2">
-                        <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
-                        <div>
-                            <span class="px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-800 border border-emerald-500/20 rounded-full inline-block mb-4 shadow-xs">Software Libre (MIT)</span>
-                            <h3 class="text-2xl font-bold text-nalu-brown mb-3">Cucurucho POS</h3>
-                            <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">POS minimalista offline-first en uso activo para mostrador rápido, control de turnos y exportación a Excel sin comisiones.</p>
-                        </div>
-                        <div>
-                            <!-- AQUÍ COLOCAS EL DOMINIO DEFINITIVO DE TU APP -->
-                            <a href="/cucurucho" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-800 hover:text-emerald-900 transition-colors group-hover:translate-x-1.5 duration-200">
-                                Ir al sistema &rarr;
-                            </a>
-                        </div>
-                    </div>
+<!-- 3. Software Libre / Cucurucho - LANDING INTERNA -->
+<div class="p-8 rounded-2xl bg-white/95 backdrop-blur-md border border-nalu-beige/80 hover:border-emerald-600 shadow-lg shadow-nalu-brown/5 hover:shadow-2xl hover:shadow-emerald-500/15 transition-all duration-300 flex flex-col justify-between relative overflow-hidden group hover:-translate-y-2">
+    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-bl-full pointer-events-none group-hover:scale-125 transition-transform duration-500"></div>
+    <div>
+        <span class="px-3.5 py-1 text-xs font-bold bg-emerald-500/10 text-emerald-800 border border-emerald-500/20 rounded-full inline-block mb-4 shadow-xs">Software Libre (MIT)</span>
+        <h3 class="text-2xl font-bold text-nalu-brown mb-3">Cucurucho POS</h3>
+        <p class="text-nalu-brown/80 text-sm mb-6 leading-relaxed font-medium">POS minimalista offline-first en uso activo para mostrador rápido, control de turnos y exportación a Excel sin comisiones.</p>
+    </div>
+    <div>
+        <a href="/cucurucho" class="inline-flex items-center gap-2 text-sm font-bold text-emerald-800 hover:text-emerald-900 transition-colors group-hover:translate-x-1.5 duration-200">
+            Ver landing &rarr;
+        </a>
+    </div>
+</div>
                 </div>
             </div>
         </section>
